@@ -1,0 +1,6 @@
+ Software Developer: [Image Link](https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/software-developer-img.png)
+- Tech Image: [Image Link](https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/advanced-technologies-img.png)
+- Diwali Theme: [Image Link](https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/diwali-img.png)
+- Food Image: [Image Link](https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/food-img.png)
+- Newspaper Image: [Image Link](https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/news-paper-img.png)
+- Diwali Background and Items: [Various Links](https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/diwali-bg.png), `lamp-img.png`, `diya-img.png`, `firework-img.png`, `firecracker-img.png`.

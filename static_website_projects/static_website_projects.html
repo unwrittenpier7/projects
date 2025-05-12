@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Projects</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f8f9fa;
+    }
+
+    .img1 {
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .hsize {
+      font-family: 'Bree Serif', serif;
+      font-size: 2.5rem;
+      margin-top: 20px;
+    }
+
+    .par {
+      font-size: 1.2rem;
+      font-family: 'Bree Serif', serif;
+    }
+
+    .imgsize {
+      width: 100%;
+      max-width: 250px;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .imgsize:hover {
+      transform: scale(1.05);
+    }
+
+    .bgimg,
+    .bgimg2,
+    .bgimage {
+      height: 100vh;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .bgimg {
+      background-image: url('https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/advanced-technologies-img.png');
+    }
+
+    .bgimg2 {
+      background-image: url('https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/news-paper-img.png');
+    }
+
+    .bgimage {
+      background-image: url('https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/foodbg.png');
+    }
+
+    .bgc,
+    .bk {
+      background-color: #fff;
+      border-top-left-radius: 16px;
+      border-top-right-radius: 16px;
+      padding: 25px;
+    }
+
+    .bton,
+    .button {
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      background-color: #ffffff;
+      color: #333;
+      margin: 10px 10px 0 0;
+      transition: background-color 0.3s ease;
+    }
+
+    .bton:hover,
+    .button:hover {
+      background-color: #e2e6ea;
+    }
+
+    .heading {
+      font-family: 'Bree Serif', serif;
+      color: #323f4b;
+    }
+
+    .diwali-top-section {
+      background-image: url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/diwali-bg.png");
+      height: 30vh;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .diwali-top-section-heading {
+      color: white;
+      font-family: "Caveat", cursive;
+      font-size: 36px;
+      text-align: center;
+    }
+
+    .diwali-bottom-section {
+      background-color: #e6f6ff;
+      padding: 20px;
+    }
+
+    .diwali-card-item {
+      background-color: white;
+      width: 140px;
+      border-radius: 12px;
+      padding: 16px;
+      margin: 10px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .diwali-card-item:hover {
+      transform: scale(1.05);
+    }
+
+    .diwali-card-image {
+      height: 64px;
+      width: 64px;
+    }
+
+    .diwali-card-name {
+      font-family: "Roboto";
+      font-size: 14px;
+      color: #616e7c;
+    }
+
+    .diwali-card-price {
+      font-family: "Roboto";
+      font-size: 16px;
+      color: #323f4b;
+      font-weight: 500;
+    }
+  </style>
+</head>
+
+<body>
+  <section id="sectionhome" class="text-center py-5">
+    <img class="img1 mb-3" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/software-developer-img.png" alt="Software Developer">
+    <h1 class="hsize">My Projects</h1>
+    <p class="par">Here are a few of my static website projects developed using HTML, CSS, and Bootstrap.</p>
+
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-6 col-md-3 mb-3">
+          <img class="imgsize" onclick="display('sectiontech')" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/advanced-technologies-img.png" alt="Tech">
+        </div>
+        <div class="col-6 col-md-3 mb-3">
+          <img class="imgsize" onclick="display('sectiondiwali')" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/diwali-img.png" alt="Diwali">
+        </div>
+        <div class="col-6 col-md-3 mb-3">
+          <img class="imgsize" onclick="display('sectionmeals')" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/food-img.png" alt="Food">
+        </div>
+        <div class="col-6 col-md-3 mb-3">
+          <img class="imgsize" onclick="display('sectionpaper')" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/news-paper-img.png" alt="News">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="sectiontech" style="display:none">
+    <div class="bgimg d-flex flex-column justify-content-end">
+      <div class="bgc">
+        <h1>Advanced Technologies</h1>
+        <p>Machinery and equipment developed from the application of scientific knowledge.</p>
+        <button class="bton">Learn more</button>
+        <button class="btn btn-primary" onclick="display('sectionhome')">Back</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="sectionmeals" style="display:none">
+    <div class="bgimage d-flex flex-column justify-content-end">
+      <div class="bk">
+        <h1 class="heading">Happy Meals</h1>
+        <p class="par">Discover the best foods across 1,000+ restaurants.</p>
+        <button class="button">Book Now</button>
+        <button class="btn btn-primary" onclick="display('sectionhome')">Back</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="sectionpaper" style="display:none">
+    <div class="bgimg2 d-flex flex-column justify-content-end">
+      <div class="bgc">
+        <h1>Daily News</h1>
+        <p>Stay informed with the latest headlines from across the world.</p>
+        <button class="bton">Read more</button>
+        <button class="btn btn-primary" onclick="display('sectionhome')">Back</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="sectiondiwali" style="display:none">
+    <div class="diwali-top-section">
+      <h1 class="diwali-top-section-heading">Celebrate Diwali with your friends</h1>
+    </div>
+    <div class="diwali-bottom-section text-center">
+      <div class="d-flex flex-wrap justify-content-center">
+        <div class="diwali-card-item">
+          <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/lamp-img.png" class="diwali-card-image" alt="Lamp" />
+          <h1 class="diwali-card-name">Diwali Air Balloon</h1>
+          <p class="diwali-card-price">Rs 369</p>
+        </div>
+        <div class="diwali-card-item">
+          <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/diya-img.png" class="diwali-card-image" alt="Diya" />
+          <h1 class="diwali-card-name">Diwali - Lamp</h1>
+          <p class="diwali-card-price">Rs 50</p>
+        </div>
+        <div class="diwali-card-item">
+          <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/firework-img.png" class="diwali-card-image" alt="Sparklers" />
+          <h1 class="diwali-card-name">Sparklers</h1>
+          <p class="diwali-card-price">Rs 150</p>
+        </div>
+        <div class="diwali-card-item">
+          <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/firecracker-img.png" class="diwali-card-image" alt="Firecracker" />
+          <h1 class="diwali-card-name">Fire Cracker</h1>
+          <p class="diwali-card-price">Rs 560</p>
+        </div>
+      </div>
+      <button class="btn btn-primary mt-3" onclick="display('sectionhome')">Back</button>
+    </div>
+  </section>
+
+  <script>
+    function display(sectionId) {
+      const sections = ['sectionhome', 'sectiontech', 'sectionmeals', 'sectionpaper', 'sectiondiwali'];
+      sections.forEach(id => {
+        document.getElementById(id).style.display = (id === sectionId) ? 'block' : 'none';
+      });
+    }
+  </script>
+
+</body>
+
+</html>
